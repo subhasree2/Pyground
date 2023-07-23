@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+main {
+  background-color: #00203F;
+  color : #ADEFD1;
+}
+
+textarea {
+  width: 500px;
+  margin-right: 10px;
+  color : #00203F;
+}
+
+.input div,.output div {
+  font-size: 24px;
+}
+
+.output {
+  margin-left: 10%;
+}
+
+.input {
+  margin-left: 1%;
+}
+
+.container {
+  margin-top: 4%;
+}
+
+button {
+  color: white;
+  border-radius: 2%;
+}
